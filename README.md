@@ -8,12 +8,13 @@ SQL-based business analysis of the Chinook media store performed for my internsh
 
 The analysis is split into modular scripts and results for better organization:
 
-| Task                  | SQL Script           | Result Data |
+Top Selling Products: Identifies the most popular tracks by units sold and total revenue.
 
-| **01. Top Products** | `01_top_products.sql` | `01_top_products_results.csv` |
-| **02. Regional Revenue** | `02_regional_revenue.sql` | `02_regional_revenue_results.csv` |
-| **03. Monthly Trends** | `03_monthly_trends.sql` | `03_monthly_trends_results.csv` |
-| **04. Customer Ranking** | `04_customer_ranking.sql` | `04_customer_ranking_results.csv` |
+Revenue per Region: Analyzes sales distribution across different countries.
+
+Monthly Performance: Tracks revenue growth trends month-over-month.
+
+Customer Ranking: Uses advanced RANK() window functions to identify high-value customers.
 
 ## Database Schema
 
@@ -24,7 +25,10 @@ The analysis is split into modular scripts and results for better organization:
 
 ## Files
 
-* `Chinook_Sqlite.sqlite`: Project database.
-* `diagram.png`: Database ERD.
+Scripts/: 4 .sql files containg the queries.
 
----
+Results/: 4  .csv files containing the query outputs.
+
+Chinook_Sqlite.sqlite: The source database file.
+
+diagram.png: The database Entity Relationship Diagram.
